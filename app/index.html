@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Homefront — Household Budget for the Alvarez Family</title>
+<meta name="description" content="Homefront is a working household budget site: a monthly dashboard, a budget planner, an expense tracker, savings goals and plain-English budgeting guidance — all running from its own files, with no network requests.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#/">Homefront<span>.</span></a>
+    <span class="tagline">A household budget that earns its keep.</span>
+    <span class="month-badge" id="month-badge">November 2026 · The Alvarez household</span>
+  </div>
+  <nav class="site-nav" aria-label="Sections">
+    <a href="#/" data-route="">Dashboard</a>
+    <a href="#/planner" data-route="planner">Budget Planner</a>
+    <a href="#/expenses" data-route="expenses">Expenses</a>
+    <a href="#/goals" data-route="goals">Savings Goals</a>
+    <a href="#/learn" data-route="learn">Learn</a>
+  </nav>
+</header>
+
+<main class="page" id="view">
+  <noscript>
+    <div class="card">
+      <h1>Homefront needs JavaScript</h1>
+      <p>This budget site is a working tool: its dashboard, planner, tracker and goals are drawn by JavaScript from the household&rsquo;s own data file. Please enable JavaScript and reload.</p>
+    </div>
+  </noscript>
+</main>
+
+<footer class="site-footer">
+  <p><strong>Homefront</strong> — a demo household budget site. The Alvarez family is invented; every figure is sample data, sized to public U.S. benchmarks cited on the Learn page.</p>
+  <p>Your changes live in this browser tab and reset when you reload — nothing is uploaded anywhere. All of the site&rsquo;s files are its own; it makes no network requests.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
